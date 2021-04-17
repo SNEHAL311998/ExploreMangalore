@@ -1,0 +1,131 @@
+.section_gap {
+	padding: 120px 0;
+	@media (max-width: 1199px) {
+		padding: 80px 0;
+	}
+}
+
+.section_gap_top {
+	padding-top: 120px;
+	@media (max-width: 1199px) {
+		padding-top: 80px;
+	}
+}
+
+.section_gap_bottom {
+	padding-bottom: 120px;
+	@media (max-width: 1199px) {
+		padding-bottom: 80px;
+	}
+}
+
+/* Main Title Area css
+============================================================================================ */
+
+.main_title {
+	text-align: center;
+	margin-bottom: 75px;
+	@media (max-width: 1199px) {
+		margin-bottom: 40px;
+	}
+	p {
+		display: inline-block;
+		font-weight: 400;
+		margin-bottom: 0px;
+		text-transform: uppercase;
+		@include gradient-text($primary-color, $primary-color2);
+		margin: 0px;
+		letter-spacing: 1px;
+	}
+	h1 {
+		font-size: 48px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		@media (max-width: 1199px) {
+			margin-bottom: 5px;
+			margin-top: 0px;
+		}
+		@media (max-width: 991px) {
+			font-size: 30px;
+		}
+	}
+	.title-widget-bg {
+		display: inline-block;
+		height: 5px;
+		width: 100px;
+		background: #dddddd;
+	}
+}
+
+/* End Main Title Area css
+============================================================================================ */
+
+/* Start Gradient Area css
+============================================================================================ */
+
+.gradient-bg {
+	@include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+.gradient-bg-reverse {
+	@include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+}
+
+.gradient-bg2 {
+	@include gradient(90deg, $primary-color3 0%, $primary-color4 100%);
+}
+
+.gradient-color {
+	@include gradient(90deg, $primary-color 0%, $primary-color2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+/* End Gradient Area css
+============================================================================================ */
+
+/* Start Buttons Area css
+============================================================================================ */
+
+.primary-btn {
+	position: relative;
+	display: inline-block;
+	color: $title-color;
+	font-family: $primary-font;
+	font-size: 12px;
+	font-weight: 600;
+	outline: none !important;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	@include transition();
+	z-index: 1;
+	&.btn-bg {
+		background: #fff;
+		line-height: 50px;
+		padding: 0px 38px;
+		border-radius: 5px;
+		&:hover {
+			@extend .gradient-bg;
+			color: #fff;
+		}
+	}
+	&:hover {
+		@include gradient-text($primary-color, $primary-color2);
+	}
+}
+
+/* End Buttons Area css
+============================================================================================ */
+
+/* Start Overlay css
+============================================================================================ */
+.overlay {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+
+/* End Overlay css
+============================================================================================ */

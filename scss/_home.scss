@@ -1,0 +1,657 @@
+/* Start About Area css
+============================================================================================ */
+
+.about-area {
+	.single-about {
+		position: relative;
+		.bordered-img {
+			position: absolute;
+			right: 0;
+			bottom: -70px;
+			z-index: 5;
+			border: 1px dashed #b89035;
+			padding: 20px;
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+	.about-thumb {
+		overflow: hidden;
+		display: inline-block;
+	}
+	@media (max-width: 800px) {
+		.info-content {
+			text-align: center;
+			padding: 80px 30px 80px 0;
+		}
+	}
+	.about-content {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			left: 100%;
+			top: 0;
+			z-index: 3;
+			background: #fff;
+			width: 70px;
+			height: 100%;
+			@media (max-width: 991px) {
+				width: 50px;
+			}
+			@media (max-width: 575px) {
+				display: none;
+			}
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+		background: #fff;
+		padding: 35px 0px;
+		min-width: 440px;
+		margin-top: 50px;
+		@media only screen and (min-width: 992px) and (max-width: 1200px) {
+			min-width: 400px;
+		}
+		z-index: 5;
+		@media (max-width: 991px) {
+			padding: 30px 30px 30px 0;
+			margin-top: 0px;
+		}
+		@media (max-width: 575px) {
+			padding: 30px 0px;
+		}
+		h1 {
+			line-height: 1.15em;
+			margin-bottom: 30px;
+			@media (max-width: 991px) {
+				font-size: 25px;
+			}
+			@media (max-width: 575px) {
+				font-size: 25px;
+			}
+		}
+		p {
+			margin: 0;
+		}
+		.primary-btn {
+			margin-top: 30px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		@media (max-width: 767px) {
+			min-width: 300px;
+		}
+	}
+	.about-right {
+		z-index: 2;
+	}
+}
+
+/* End About Area css
+============================================================================================ */
+
+/* Start Feature Area css
+============================================================================================ */
+
+.feature-area {
+	position: relative;
+	padding-bottom: 90px;
+	@media (max-width: 1199px) {
+		padding-bottom: 50px;
+	}
+}
+
+.single-feature {
+	text-align: center;
+	padding: 40px 20px;
+	border: 1px solid #eeeeee;
+	margin-bottom: 30px;
+	@include transition();
+	.feature-thumb {
+		position: relative;
+		overflow: hidden;
+		background: #f7f9fd;
+		padding: 40px;
+	}
+	.feature-details {
+		h5 {
+			font-size: 21px;
+			margin-bottom: 15px;
+		}
+	}
+	&:hover {
+		border: 1px solid transparent;
+		box-shadow: 0px 5px 50px rgba(129, 74, 255, 0.20);
+	}
+}
+/* End Feature Area css
+============================================================================================ */
+
+/* Start CTA Area css
+============================================================================================ */
+.cta-area {
+	background: url(../img/cta-bg.png) center no-repeat;
+	background-size: cover;
+	color: $title-color;
+	position: relative;
+	margin-top: 25px;
+	margin-bottom: 40px;
+	@media (max-width: 991px) {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	h1 {
+		font-size: 48px;
+		color: $title-color;
+		margin-bottom: 20px;
+		@media (max-width: 1199px) {
+			font-size: 36px;
+		}
+	}
+	.primary-btn {
+		margin-top: 15px;
+		background: $title-color;
+		line-height: 48px;
+		padding: 0px 38px;
+		color: #ffffff;
+		border: 1px solid $title-color;
+		letter-spacing: 2px;
+		&:hover {
+			background: transparent;
+			color: $title-color;
+		}
+	}
+	.cta-img {
+		position: absolute;
+		top: -58%;
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+}
+/* End CTA Area css
+============================================================================================ */
+
+/* Start Trip Package css
+============================================================================================ */
+.package-area {
+	padding-bottom: 90px;
+	@media (max-width: 1199px) {
+		padding-bottom: 60px;
+	}
+}
+
+.single-package {
+	position: relative;
+	padding: 20px 20px 40px;
+	border: 1px solid #eeeeee;
+	margin-bottom: 30px;
+	@include transition();
+	.meta-top {
+		.fa {
+			margin-right: 5px;
+		}
+	}
+	.thumb {
+		overflow: hidden;
+		margin-bottom: 30px;
+		img {
+			width: 100%;
+			@include transition();
+		}
+	}
+	h4 {
+		margin-bottom: 12px;
+		font-size: 21px;
+		@include transition();
+	}
+	a {
+		color: $title-color;
+	}
+	.date {
+		@extend .gradient-bg;
+		color: #fff;
+		padding: 12px 11px;
+		text-align: center;
+		margin-bottom: 0px;
+		display: inline-block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		font-size: 13px;
+		@include transition();
+		span {
+			font-family: $title-font;
+			font-size: 32px;
+		}
+	}
+	.primary-btn {
+		margin-top: 20px;
+	}
+	&:hover {
+		border: 1px solid transparent;
+		box-shadow: 0px 5px 50px rgba(129, 74, 255, 0.2);
+		img {
+			transform: scale(1.1);
+		}
+		.date {
+			@extend .gradient-bg2;
+		}
+	}
+}
+/* End Trip Package css
+============================================================================================ */
+
+/* Start Popular Places Area css
+============================================================================================ */
+.popular-places-area {
+}
+
+.single-popular-places {
+	position: relative;
+	overflow: hidden;
+	.popular-places-img {
+		position: relative;
+		&:before {
+			content: "";
+			background: transparent;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			height: 100%;
+			width: 100%;
+			@include transition();
+		}
+	}
+	.popular-places-text {
+		position: absolute;
+		left: 50%;
+		bottom: 0px;
+		width: 100%;
+		max-width: 330px;
+		padding: 0px 10px;
+		@include transform(translateX(-50%));
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+		@include transition();
+		h4 {
+			font-size: 21px;
+			color: #fff;
+			margin-bottom: 0px;
+			@include transition();
+		}
+		p {
+			color: #fff;
+			margin-bottom: 10px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+	&:hover {
+		.popular-places-img {
+			&:before {
+				@extend .gradient-bg;
+				opacity: .85;
+			}
+		}
+		.popular-places-text {
+			bottom: 80px;
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+/* End Popular Places Area css
+============================================================================================ */
+
+/* Team Area css
+============================================================================================ */
+.team_area {
+	padding-bottom: 90px;
+	@media (max-width: 1199px) {
+		padding-bottom: 60px;
+	}
+}
+.team_inner {
+}
+.team_item {
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eeeeee;
+	margin-bottom: 30px;
+	@include transition();
+	.team_img {
+		position: relative;
+		overflow: hidden;
+		.hover {
+			position: absolute;
+			left: 0px;
+			width: 90%;
+			bottom: -120px;
+			background: #fff;
+			padding: 20px;
+			padding-left: 0px;
+			@include transition();
+			@media (min-width: 1921px) {
+				padding-left: 20px;
+			}
+			@media (max-width: 767px) {
+				padding-left: 20px;
+			}
+			h4 {
+				margin-bottom: 5px;
+			}
+			p {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	&:hover {
+		border: 1px solid transparent;
+		box-shadow: 0px 20px 50px rgba(129, 74, 255, 0.2);
+		.team_img {
+			&:before {
+				opacity: 1;
+			}
+			.hover {
+				bottom: -20px;
+			}
+		}
+	}
+}
+/* End Team Area css
+============================================================================================ */
+
+/* Start CTA Area css
+============================================================================================ */
+.cta-area2 {
+	background: url(../img/cta-bg2.png) center no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	position: relative;
+	@media (max-width: 991px) {
+		text-align: center;
+		background-position: right;
+	}
+	.cta-img2 {
+		@media (max-width: 991px) {
+			display: none;
+		}
+	}
+	.form-inline {
+		@media (max-width: 991px) {
+			-ms-flex-pack: center;
+			justify-content: center;
+		}
+	}
+	h1 {
+		font-size: 48px;
+		color: #ffffff;
+		margin-bottom: 20px;
+		@media (max-width: 1199px) {
+			font-size: 36px;
+		}
+		br {
+			@media (max-width: 991px) {
+				display: none;
+			}
+		}
+	}
+	p {
+		margin-bottom: 40px;
+	}
+	.form-control {
+		background: #c251da;
+		border: 1px solid transparent;
+		color: #ffffff;
+		border-radius: 0px;
+		line-height: 60px;
+		height: 60px;
+		min-width: 390px;
+		padding: 0 20px;
+		@media (max-width: 1199px) {
+			min-width: 280px;
+		}
+		@media (max-width: 480px) {
+			min-width: 190px;
+		}
+		@include placeholder {
+			color: #ffffff;
+			font-size: 13px;
+			font-weight: 300;
+		}
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	.btn {
+		padding: 0px 25px;
+		max-height: 40px;
+		line-height: 39px;
+		position: relative;
+		top: 10px;
+		border-radius: 0px;
+		left: -45px;
+		font-weight: 500;
+		font-size: 12px;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	.info {
+		position: absolute;
+		bottom: -30px;
+		&.error {
+			color: $title-color;
+		}
+	}
+}
+/* End CTA Area css
+============================================================================================ */
+
+/* Start Testimonials Area css
+============================================================================================ */
+.testimonials-area {
+	position: relative;
+	.owl-thumb-item {
+		margin-right: 20px;
+		position: relative;
+		&:last-child {
+			margin-right: 0;
+		}
+		&.active {
+			.overlay-grad {
+				border: 2px solid $primary-color;
+			}
+		}
+		.overlay-grad {
+			border: 2px solid transparent;
+			border-radius: 50%;
+			@include transition();
+			cursor: pointer;
+			&:hover {
+				border: 2px solid $primary-color;
+			}
+		}
+	}
+}
+
+.testi-slider {
+	margin: auto;
+	.testi-item {
+		text-align: center;
+		img {
+			width: auto;
+			margin: auto;
+		}
+	}
+}
+
+.testi-item {
+	margin-bottom: 60px;
+	h4 {
+		font-size: 21px;
+		font-weight: 700;
+		margin-top: -70px;
+		margin-bottom: 10px;
+	}
+	.list {
+		margin-bottom: 35px;
+		li {
+			display: inline-block;
+			a {
+				color: #ffc000;
+				font-size: 14px;
+			}
+		}
+	}
+	p {
+		max-width: 605px;
+		margin: auto;
+		font-style: italic;
+		font-size: 17px;
+		color: #888888;
+		br {
+			@media (max-width: 767px) {
+				display: none;
+			}
+		}
+	}
+}
+/* End Testimonials Area css
+============================================================================================ */
+
+/* Start Blog Area css
+============================================================================================ */
+
+.home-blog-area {
+	padding-bottom: 90px;
+	@media (max-width: 1199px) {
+		padding-bottom: 50px;
+	}
+}
+
+.single-blog {
+	border: 1px solid #eeeeee;
+	padding: 20px;
+	margin-bottom: 30px;
+	@include transition();
+	.blog-thumb {
+		position: relative;
+		overflow: hidden;
+	}
+	.blog-details {
+		padding: 25px 0px;
+		p {
+			margin-bottom: 0;
+		}
+		.blog-meta {
+			p {
+				font-size: 13px;
+				margin-right: 20px;
+				a {
+					color: $text-color;
+				}
+			}
+			span {
+				padding-right: 5px;
+			}
+		}
+		h5 {
+			margin: 15px 0px;
+			a {
+				color: $title-color;
+				font-size: 21px;
+				@include transition();
+				&:hover {
+					color: $primary-color;
+				}
+			}
+		}
+	}
+	&:hover {
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	}
+}
+
+/* End Blog Area css
+============================================================================================ */
+
+/* Start Trip Form Area css
+============================================================================================ */
+.trip-form-section {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/trip-form-bg.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 70px 50px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+	@media (max-width: 767px) {
+		padding: 70px 00px;
+	}
+	h1 {
+		font-size: 36px;
+		margin-bottom: 50px;
+		color: #ffffff;
+	}
+	.trip-form-area {
+		.form-control {
+			border: 0;
+			padding: 0px 20px;
+			font-size: 13px;
+			background: rgba(119, 135, 146, 0.8);
+			color: #ffffff;
+			height: 40px;
+			line-height: 40px;
+			border-radius: 0px;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+			@include placeholder {
+				color: #ffffff;
+				font-weight: 300;
+				font-size: 13px;
+			}
+		}
+	}
+	.primary-btn {
+		margin-top: 20px;
+		border: 0;
+		padding: 8px 30px;
+		@extend .gradient-bg;
+		color: #fff;
+		letter-spacing: 1px;
+		@include transition();
+		&:hover {
+			background: $text-color;
+		}
+	}
+	.form-select {
+		.nice-select {
+			padding: 0px;
+			background: rgba(119, 135, 146, 0.8) !important;
+			padding-left: 20px;
+			font-size: 13px;
+			height: 40px;
+			color: #ffffff;
+			.list {
+				.option {
+					color: $title-color;
+					&.selected {
+						color: $primary-color;
+					}
+					&:hover {
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+/* End Trip Form Area css
+============================================================================================ */
